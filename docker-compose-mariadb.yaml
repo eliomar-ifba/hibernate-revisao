@@ -1,0 +1,17 @@
+services:
+  mariadb:
+    image: mariadb:lts
+    container_name: mariadb-container
+    restart: 'always'
+    environment:
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_DATABASE: appdb
+      #MARIADB_USER: appuser
+      #MARIADB_PASSWORD: secret
+    ports:
+      - "3307:3306"  # Porta externa:interna (3307 para evitar conflito com MySQL)
+    volumes:
+      - mariadb_data:/var/lib/mysql
+
+volumes:
+  mariadb_data:
