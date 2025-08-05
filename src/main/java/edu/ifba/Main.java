@@ -6,8 +6,8 @@ import jakarta.persistence.Persistence;
 public class Main {
     public static void main(String[] args) {
         Aluno aluno = new Aluno();
-        aluno.setNome("Derek");
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("mysql");
+        aluno.setNome("João da Silva");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("postgre");
         var em = emf.createEntityManager();
 
         em.getTransaction().begin();

@@ -28,18 +28,20 @@
             <version>3.5.4</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.7.7</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-core -->
         <dependency>
             <groupId>org.hibernate.orm</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>6.5.2.Final</version> <!-- Versão estável atual (agosto/2025) -->
+            <version>6.6.24.Final</version>
         </dependency>
-
-        <!-- Jakarta Persistence API 3.1 -->
-        <dependency>
-            <groupId>jakarta.persistence</groupId>
-            <artifactId>jakarta.persistence-api</artifactId>
-            <version>3.1.0</version>
-        </dependency>
+      
        
 
     </dependencies>
