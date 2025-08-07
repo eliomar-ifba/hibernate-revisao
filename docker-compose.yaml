@@ -29,7 +29,7 @@ services:
       - mysql_data:/var/lib/mysql
 
   postgres:
-    image: postgres:latest
+    image: postgres:17.5-alpine3.22
     container_name: postgres-container
     restart: always
     environment:
