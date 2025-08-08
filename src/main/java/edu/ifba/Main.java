@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         Aluno aluno = new Aluno();
         aluno.setNome("João da Silva");
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("postgre");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("mariadb");
         var em = emf.createEntityManager();
 
         em.getTransaction().begin();
